@@ -35,7 +35,7 @@
 }
 
 :root {
-  --hijau-tua: #741414;
+  --hijau-tua: #bd1111;
   --hijau: #c20707;
   --hijau-muda: #795548;
   --aksen: #d7a86e;
@@ -1677,4 +1677,21 @@ padding-right: 10px;
 .sukses { 
   padding: 20px 12px; 
 } 
+}
+
+/* ===== FITUR TAMPILKAN PASSWORD ===== */
+.tampil-sandi {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  color: var(--teks);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.tampil-sandi input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--hijau-tua);
 }

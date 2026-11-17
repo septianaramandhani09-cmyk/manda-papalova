@@ -74,9 +74,15 @@ ambil("form-login").addEventListener("submit", function (e) {
   ambil("login-salah").hidden = benar;
   if (benar) {
     localStorage.setItem("masuk", "ya");
+    ambil("tampilkan-password").type = "pasword";
     this.reset();
     location.hash = "#/";
   }
+});
+
+// Fitur Tampilkan / sembunyikan password
+ambil("tampil-password").addEventListener("change", function () {
+  ambil("isian-password").type = this.checked ? "text" : "password";
 });
 
 /* ==== MENU DETAIL MENU ===== */
